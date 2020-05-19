@@ -17,4 +17,3 @@ example:<br>
 $ python hammer.py -s 123.45.67.89 -t 135<br>
 
 Video Tutorial:
-How to use Hammer [`Watch it`](http://www.youtube.com/watch?v=HVbRUhX2EPo)
